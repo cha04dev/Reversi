@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>四人オセロオンライン</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 入室エリア -->
+    <div id="join-screen">
+        <p id="join-screen-joinNum">0/4 人が参加中</p>
+        <input id="join-screen-nickname" type="text" autocomplete="off" placeholder="名前を入力">
+        <button id="join-screen-joinButton">参加</button>
+    </div>
+
+    <!-- 対局エリア -->
+    <div id="game-screen">
+        <canvas id="mainCanvas" width="512" height="512"></canvas>
+
+        <div id="member-list">
+            <div id="player-0" class="member-item">
+                <div class="member-item-name">未参加</div>
+                <div class="member-item-time">　</div>
+            </div>
+
+            <div id="player-1" class="member-item">
+                <div class="member-item-name">未参加</div>
+                <div class="member-item-time">　</div>
+            </div>
+
+            <div id="player-2" class="member-item">
+                <div class="member-item-name">未参加</div>
+                <div class="member-item-time">　</div>
+            </div>
+
+            <div id="player-3" class="member-item">
+                <div class="member-item-name">未参加</div>
+                <div class="member-item-time">　</div>
+            </div>
+
+            <div id="info" class="member-item">
+                <div id="infoMessage">対局は4人集まると自動で開始します</div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- ライブラリ -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

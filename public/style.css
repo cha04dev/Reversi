@@ -1,0 +1,53 @@
+#game-screen
+{
+    display: flex;
+    padding-top: 20px;
+}
+
+#member-list
+{
+    padding-left: 20px;
+}
+
+.member-item
+{
+    padding: 5px 10px;
+    margin: 10px 0px;
+    border: 2px solid black;
+    width: 200px;
+}
+
+.member-item-name
+{
+    font-size: larger;
+    font-weight: bold;
+}
+
+#player-0
+{
+    background-color: black;
+    color: white;
+}
+
+#player-1
+{
+    background-color: white;
+    color: black;
+}
+
+#player-2
+{
+    background-color: red;
+    color: white;
+}
+
+#player-3
+{
+    background-color: blue;
+    color: white;
+}
+
+#info
+{
+    text-align: center;
+}
